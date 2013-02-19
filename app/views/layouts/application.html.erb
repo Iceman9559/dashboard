@@ -10,11 +10,16 @@
 		<div class="container">
 			<div class="row">
 				<div class="page-header">
-					<h1><%= params[:action].humanize()%></h1>
+					<h1><%= content_for?(:title) ? yield(:title) : params[:action].humanize() %></h1>
 				</div>
 			</div>
 			<div class="row">
-					<%= yield %>
+				<div class="span12">
+					<%= flashes_helper %>
+				</div>
+			</div>
+			<div class="row">
+				<%= yield %>
 			</div>
 		</div>
 	</body>

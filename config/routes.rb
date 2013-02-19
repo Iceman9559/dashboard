@@ -1,6 +1,5 @@
 Dashboard::Application.routes.draw do
-  resources :users
-
+	resources :users
 
 	get "main/home"
 	get "main/login"
