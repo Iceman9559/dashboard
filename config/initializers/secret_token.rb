@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-Dashboard::Application.config.secret_token = '2f7fc858b6eb4755434cf514f5f245839f481b122226375804fee917ee0c88b49028eaa11c8137a0aff82a17d4ff8a161f78a723da0254119bf05d7c140d01b6'
+Dashboard::Application.config.secret_token = 'b79c409944e40ef25da7cd2ba81f012defee2b498a8c7c58e798956cab131ca274cf9a0bc27c1a575a6f7509851b31668b58b9173537b734709b1a9a212210f3'

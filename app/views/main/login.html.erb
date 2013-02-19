@@ -1,0 +1,28 @@
+<div class="span6">
+	<%= form_tag("/sign-in", :method =>"post", :class => "form-horizontal") do %>
+		<fieldset class="well well-large">
+			<!-- Username  -->
+			<div class="control-group">
+				<div class="control-label">
+					Login
+				</div>
+				<div class="controls">
+					<input type="text" name="" />
+				</div>
+			</div>
+			<!-- Password -->
+			<div class="control-group">
+				<div class="control-label">
+					Password
+				</div>
+				<div class="controls">
+					<input type="password" name="password" />
+				</div>
+			</div>
+			<!-- Sign-In Button -->
+			<div class="form-actions center" style="padding-left:0px;">
+				<%= submit_tag("Sign In", :class => "btn btn-primary") %>
+			</div>
+		</fieldset>
+	<% end %>
+</div>

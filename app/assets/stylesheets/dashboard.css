@@ -1,0 +1,234 @@
+/************************************************
+	Application Styles
+************************************************/
+a:focus, a:active, a:hover,
+select:focus, select:active,
+.btn:focus, .btn:active { outline: none; text-decoration: none; }
+
+dl.list { display:inline-block; }
+dl.list .btn { display: block; margin: 4px 0px 4px 0px; text-align: left; }
+
+/***********************************************
+	Form Elements
+***********************************************/
+input[type="radio"],
+input[type="checkbox"]
+	{outline:none;}
+input[type="text"]:disabled,
+input[type="checkbox"]:disabled
+	{border:1px solid #999;background-color:#DDD;}
+
+select:focus, select:active,
+input:focus, input:active,
+.btn:focus, .btn:active { outline: none !important; text-decoration: none; }
+
+/************************************************
+	Global Styles
+************************************************/
+
+.left, .center, .right { vertical-align: middle; }
+.left{ text-align: left !important; }
+.center{ text-align: center !important; }
+.right{ text-align: right !important; }
+
+span.center-right{ display:inline-block; vertical-align: middle; text-align: right !important; padding-right: 33%; }
+
+thead.left th, tbody.left td{ text-align: left; }
+thead.center th, tbody.center td { text-align: center; }
+thead.right th, tbody.right td { text-align: right; }
+
+.inline { display: inline-block; }
+.inline-block { display: inline-block; }
+
+.disabled{ color: #999; }
+
+.strong { font-weight: bold; }
+.italic { font-style: italic; }
+
+.transparent { border: 0px !important; }
+
+.caption { font-style: italic; font-size: 10px; font-weight: normal; }
+
+.twipsy { cursor: pointer; }
+div.tooltip i { text-decoration: underline; font-style: none !important; }
+div.tooltip i.item { font-weight: bold; font-style: italic; text-decoration: none; }
+
+/************************************************
+	jQuery Datepicker UI
+************************************************/
+table.ui-datepicker-calendar { margin-top: 0px; }
+
+/************************************************
+	jQuery DataTables
+************************************************/
+table.dataTable tbody td { text-align: left; }
+
+table.dataTable td.group {
+	font-weight: bold;
+	font-style: italic;
+	color: #CCCCCC;
+	background-color: #565656 !important;
+	padding-left: 10px !important;
+	border: 1px solid #232323 !important;
+	border-width: 1px 0px 1px 0px !important;
+}
+
+table.dataTable td.expanded-group i.icon-white { background-position: 0 -96px; margin-right: 5px; }
+table.dataTable td.collapsed-group i.icon-white { background-position: -24px -96px; margin-right: 5px; }
+
+table.dataTable td.subgroup.expanded-group { background: url("../images/datatables/minus.jpg") no-repeat scroll 10px center transparent; padding-left: 25px !important }
+table.dataTable td.subgroup.collapsed-group { background: url("../images/datatables/plus.jpg") no-repeat scroll 10px center transparent; padding-left: 25px !important }
+
+table.dataTable tbody tr.even:hover td,
+table.dataTable tbody tr.odd:hover td { color: #000 !important; background-color: #74A6CC!important; border-top: 1px solid #417399 !important; border-bottom: 1px solid #417399 !important; }
+
+table.dataTable tbody tr.odd:hover a,
+table.dataTable tbody tr.even:hover a { color: #000 !important; }
+
+span.sortIconWrapper { display: inline-block; height: 28px; width: 14px; }
+span.sortIconWrapper .icon { position: absolute; }
+span.sortIconWrapper .icon-chevron-up { margin-top: -14px; }
+span.sortIconWrapper .icon-chevron-down { margin-top: 2px; }
+
+/***********************************************
+	jQuery Spinner UI
+***********************************************/
+.ui-spinner-button { :inline-block; width:14px; vertical-align:text-top; }
+
+
+/************************************************
+	Bootstrap Styles
+************************************************/
+h3.inline { padding: 10px 20px; }
+
+/* Form Helpers */
+.form-actions { margin-left: 0px !important; padding-left: 0px; text-align: center; padding-bottom: 17px !important; border-bottom: 1px solid #DDDDDD; }
+
+.form-horizontal .well-large { border-color: #DDD; padding: 24px 16px 0px 16px; }
+.form-horizontal .form-actions { border-color: #DDD; margin: 30px 0px 18px 0px; padding-left: 160px; text-align: left; }
+
+legend.legend { font-size: 16px; font-style: italic; margin-bottom: .75em; }
+
+select.disabled { background-color: #EEEEEE; cursor: not-allowed; }
+
+/* Navbar Dropdown Menu */
+ul.dropdown-menu { top: 36px; }
+ul.nav li.dropdown:hover ul.dropdown-menu { display: block; }
+a.dropdown-toggle:hover ul.dropdown-menu { display: block; }
+a.menu:after, .dropdown-toggle:after { content: none; }
+
+/* Tab-Dropdown Combo */
+.nav-tabs a div.dropdown { display: inline-block; margin-left: 6px; }
+.nav-tabs a div.dropdown span.dropdown-toggle { visibility: hidden; }
+.nav-tabs li.active a div.dropdown span.dropdown-toggle { visibility: visible; }
+.nav-tabs a div.dropdown span.dropdown-toggle { display: inline-block; padding: 0px 3px 2px 0px; cursor: pointer; }
+.nav-tabs a div.dropdown span.dropdown-toggle:hover { background-color: transparent; }
+.nav-tabs a div.dropdown span.dropdown-toggle.btn { display: inline-block; padding: 1px 3px 2px 3px; cursor: pointer; }
+.nav-tabs a ul.dropdown-menu { top: 27px; }
+.nav-tabs a ul.dropdown-menu div { padding-left: 1.2em; cursor: pointer; }
+.nav-tabs a ul.dropdown-menu div:hover { background-color: #0088CC; }
+.nav-tabs a ul.dropdown-menu .icon { margin-right: 4px; font-size:14px; }
+
+.dropdown-menu li:hover { color: #FFFFFF; }
+.dropdown-menu li:hover .icon { background-image: url('../images/glyphicons-halflings-white.png'); }
+
+/* Table Themes */
+table.theme1 td, table.theme1 th { vertical-align: middle; }
+
+table.theme1 thead th { border: 1px solid #417399 !important; border-width: 1px 0px 1px 1px !important; background-color: #74A6CC !important; }
+table.theme1 tbody th { border: 1px solid #7A90A1; border-width: 1px 1px 1px 0px; background-color: #AFCEE6 !important; }
+table.theme1 thead th:last-child { border-right-width: 1px !important; }
+table.theme1 tbody th:first-child { border-left-width: 1px; }
+
+table.theme1 thead tr:hover th { background-color: #74A6CC !important; }
+table.theme1 tbody tr:hover th { background-color: #9BC5E6 !important; }
+
+/* Table Theme1 - Group Styles */
+table.theme1 tbody tr.group.disabled th { border-width: 1px 1px 0px 1px; }
+table.theme1 tbody tr.group.disabled:first-child th { border-top-width: 0px; }
+table.theme1 tbody tr.group.disabled:hover th { background-color: #AFCEE6 !important; }
+
+table.theme1.vertical-header tbody th { border-top-width: 0px !important; }
+table.theme1.vertical-header tbody tr:first-child th { border: 1px solid #7A90A1 !important; }
+table.theme1.vertical-header tbody tr.vertical-header th { border: 1px solid #7A90A1 !important; }
+
+table.theme1 thead tr.vertical-header th { border: 1px solid #417399 !important; }
+table.theme1 tbody tr.vertical-header th { border: 1px solid #7A90A1 !important; }
+
+table.theme1 td ul.dropdown-menu { margin-top: -6px; }
+
+table.table .input-small { margin: 0px; }
+table.theme1 tbody td input { margin-top: 8px; }
+
+.table-striped.theme1 tbody tr td.header { background-color: #F0F0F5; border-top-color: #A6CAE3; border-bottom-color: #A6CAE3; border-left-color: #A6CAE3; }
+.table-striped.theme1 tbody tr:nth-child(odd) td.header { background-color: #E8EEF7; }
+
+
+td select { margin-top: 8px; }
+
+/* Dashboard Portlet Styles */
+div.portlet {
+	background-color: #FFFFFF;
+	border: 1px solid #CCC;
+	border-radius: 4px 4px 4px 4px;
+	padding: 0px;
+	position: relative;
+	display: inline-block;
+}
+
+div.portlet.span4 { height: 321px; }
+div.portlet.span3 { height: 239px; }
+div.portlet.span2 { height: 159px; }
+div.portlet.span1 { height: 79px; }
+
+div.portlet h1 {
+	font-size: 14px;
+	min-height: 18px;
+	line-height: 18px;
+	padding: 7px 20px;
+	margin: 1px 0 0 0;
+	border-bottom: 1px solid #CCC;
+
+	color: #333333;
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+	vertical-align: middle;
+
+	background-color: #f5f5f5;
+	background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
+	background-image: -ms-linear-gradient(top, #ffffff, #e6e6e6);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
+	background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
+	background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
+	background-image: linear-gradient(top, #ffffff, #e6e6e6);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e6e6e6', GradientType=0);
+	border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	*background-color: #e6e6e6;
+	/* Darken IE7 buttons by default so they stand out more given they won't have borders */
+	 filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+	-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+	box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+}
+
+div.portlet.span4 div.content { height: 281px; }
+div.portlet.span3 div.content { height: 201px; }
+div.portlet.span2 div.content { height: 121px; }
+div.portlet.span1 div.content { height: 41px; }
+
+.tab-content { height: auto; padding-bottom: 100px; }
+
+/************************************************
+	Font Awesome
+************************************************/
+.btn [class^="icon-"]:before,
+.btn [class*=" icon-"]:before {
+	font-size: 16px;
+	line-height: 13px !important;
+	height: 13px !important;
+}
+
+.icon-save { margin-top: 1px; }
+
+.uispinner.span1 {width: 80px;} 
