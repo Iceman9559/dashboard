@@ -1,41 +1,20 @@
 Dashboard::Application.routes.draw do
+	root :to => "main#home"
+
+	devise_for :users do
+		get "/login" => "devise/sessions#new"
+		match '/login', :to => 'devise/sessions#new'
+
+		get "/logout" => "devise/sessions#destroy"
+		match '/logout', :to => 'devise/sessions#destroy'
+	end
+
 	resources :users
 
-	get "main/home"
-	get "main/login"
-	get "main/contracts"
-	get "main/invoices"
-	get "main/reports"
-	get "main/settings"
-
-	root :to => 'main#login'
-
-	# The priority is based upon order of creation:
-	# first created -> highest priority.
-
-	# Sample of regular route:
-	#   match 'products/:id' => 'catalog#view'
-	# Keep in mind you can assign values other than :controller and :action
-
-	# Sample of named route:
-	#   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
-	# This route can be invoked with purchase_url(:id => product.id)
-
-	# Sample resource route (maps HTTP verbs to controller actions automatically):
-	#   resources :products
-
-	# Sample resource route with options:
-	#   resources :products do
-	#     member do
-	#       get 'short'
-	#       post 'toggle'
-	#     end
-	#
-	#     collection do
-	#       get 'sold'
-	#     end
-	#   end
-
+	devise_scope :user do
+		get "login", :to => "devise/sessions#new"
+		get "logout", :to => "devise/sessions#destroy"
+	end
 	# Sample resource route with sub-resources:
 	#   resources :products do
 	#     resources :comments, :sales

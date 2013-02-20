@@ -1,2 +1,34 @@
-Use this README file to introduce your application and point to useful places in the API for learning more.
-Run "rake doc:app" to generate API documentation for your models, controllers, helpers, and libraries.
+== Welcome to Dashboard! (RoR version converted from a CFWheels version)
+
+== Gems/Bundles
+Seed Dump
+1.)
+
+Twitter-Bootstrap-Rails
+1.) gem "twitter-bootstrap-rails", :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git', :branch => 'static'
+2.) bundle install
+3.) rake generate bootstrap:install static
+4.) Delete "bootstrap_and_overrides.css.less" partial file.
+5.) Remove "//= require twitter/bootstrap" from "app/assets/javascripts/application.js"
+6.) bundle show twitter-bootstrap-rails
+7.) Navigate to that directory's vender > assets folder. Copy the needed files into the mirrored directory in your site directory.
+		I slightely cheated here and ended up taking the updated Bootstrap includes from Twitter's Github directly.
+
+Devise
+1.) gem "devise"
+2.) bundle install
+3.) rails generate devise:install
+4.) Add to config/environments/development.rb
+		config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+4.) rails generate devise User
+5.) rake db:migrate
+6.) rake db:seed
+7.) rails generate devise:views
+
+== Ruby Application (Installation)
+
+== Database Structure
+1.) MSSQL insert queries were generated with Microsoft SQL Management Studio ( /db/mssql-seeds.sql )
+2.) Converted to SQLite compatible queries. After insert, db:seed file was created using Seed-Dump RubyGem.
+
+-- Users
